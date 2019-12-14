@@ -1,0 +1,11 @@
+.App {
+  margin-top: 15px;
+}
+
+.App .navbar {
+  margin-bottom: 0;
+}
+
+.App .navbar-brand {
+  font-weight: bold;
+}

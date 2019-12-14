@@ -1,0 +1,17 @@
+.home {
+    display: flex;
+}
+.home .lander {
+    /* padding: 80px 0;
+    text-align: center; */
+    padding: 0 20px;
+}
+
+.home .lander h1 {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 600;
+}
+
+.home .lander p {
+    color: #999;
+}
