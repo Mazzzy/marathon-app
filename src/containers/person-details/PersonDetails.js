@@ -244,45 +244,45 @@ export default function PersonDetails(props) {
             </div>
 
             <div className="fitness-container">
-              <div className="image-container" id="fit-image">
+              <div className="image-container fit-image">
                 <div className="stat-block" id="fit-block-1">
-                  <p className="stat-figure">
-                    2.18<br />
-                    81.1%<br />
-                  </p>
-                  <span className="highlight">normal</span>
+                  <ul className="stat-list">
+                    <li>2.18</li>
+                    <li>81.1%</li>
+                    <li className="highlight normal">normal</li>
+                  </ul>
                 </div>
 
                 <div className="stat-block" id="fit-block-2">
-                  <p className="stat-figure">
-                    2.18<br />
-                    81.1%<br />
-                  </p>
-                  <span className="highlight">above</span>
+                  <ul className="stat-list">
+                    <li>2.18</li>
+                    <li>81.1%</li>
+                    <li className="highlight above">above</li>
+                  </ul>
                 </div>
 
                 <div className="stat-block" id="fit-block-3">
-                  <p className="stat-figure">
-                    2.18<br />
-                    81.1%<br />
-                  </p>
-                  <span className="highlight">under</span>
+                  <ul className="stat-list">
+                    <li>2.18</li>
+                    <li>81.1%</li>
+                    <li className="highlight under">under</li>
+                  </ul>
                 </div>
 
                 <div className="stat-block" id="fit-block-4">
-                  <p className="stat-figure">
-                    2.18<br />
-                    81.1%<br />
-                  </p>
-                  <span className="highlight">under</span>
+                  <ul className="stat-list">
+                    <li>2.18</li>
+                    <li>81.1%</li>
+                    <li className="highlight under">under</li>
+                  </ul>
                 </div>
 
                 <div className="stat-block" id="fit-block-5">
-                  <p className="stat-figure">
-                    2.18<br />
-                    81.1%<br />
-                  </p>
-                  <span className="highlight">under</span>
+                  <ul className="stat-list">
+                    <li>2.18</li>
+                    <li>81.1%</li>
+                    <li className="highlight under">under</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -295,63 +295,74 @@ export default function PersonDetails(props) {
             </div>
 
             <div className="fitness-container">
-              <div className="image-container" id="fat-image">
+              <div className="image-container fat-image">
                 <div className="stat-block" id="fat-block-1">
-                  <p className="stat-figure">
-                    2.18<br />
-                    81.1%<br />
-                  </p>
-                  <span className="highlight">normal</span>
+                  <ul className="stat-list">
+                    <li>2.18</li>
+                    <li>81.1%</li>
+                    <li className="highlight normal">normal</li>
+                  </ul>
                 </div>
 
                 <div className="stat-block" id="fat-block-2">
-                  <p className="stat-figure">
-                    2.18<br />
-                    81.1%<br />
-                  </p>
-                  <span className="highlight">above</span>
+                  <ul className="stat-list">
+                    <li>2.18</li>
+                    <li>81.1%</li>
+                    <li className="highlight above">above</li>
+                  </ul>
                 </div>
                 
                 <div className="stat-block" id="fat-block-3">
-                  <p className="stat-figure">
-                    2.18<br />
-                    81.1%<br />
-                  </p>
-                  <span className="highlight">under</span>
+                  <ul className="stat-list">
+                    <li>2.18</li>
+                    <li>81.1%</li>
+                    <li className="highlight under">under</li>
+                  </ul>
                 </div>
                 
                 <div className="stat-block" id="fat-block-4">
-                  <p className="stat-figure">
-                    2.18<br />
-                    81.1%<br />
-                  </p>
-                  <span className="highlight">under</span>
+                  <ul className="stat-list">
+                    <li>2.18</li>
+                    <li>81.1%</li>
+                    <li className="highlight under">under</li>
+                  </ul>
                 </div>
                 
                 <div className="stat-block" id="fat-block-5">
-                  <p className="stat-figure">
-                    2.18<br />
-                    81.1%<br />
-                  </p>
-                  <span className="highlight">under</span>
+                  <ul className="stat-list">
+                    <li>2.18</li>
+                    <li>81.1%</li>
+                    <li className="highlight under">under</li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <div id="target-weight" class="fitness-container">
-        <div class="circle">
-            <div class="circle-content">
-                <span class="circle-title">target weight</span>
-                <h2 class="circle-stat"> 58.8 <small class="measurement">Kg</small></h2>
+
+            <div id="target-weight" class="circle-container">
+              <div class="circle">
+                  <div class="circle-content">
+                    <h4 class="circle-title">target weight</h4>
+                    <h6 class="circle-stat">58.8</h6>
+                  </div>
+              </div>
             </div>
-        </div>
-    </div>
+
+            <div id="target-weight" class="circle-container">
+              <div class="circle">
+                  <div class="circle-content">
+                    <h4 class="circle-title">Basal Metabolic Rate</h4>
+                    <h6 class="circle-stat">1293</h6>
+                  </div>
+              </div>
+            </div>
+
           </div>
         </Col>
       </Row>
 
       <Row>
         <Col md={12}>
-          <footer>Footer</footer>
+          <footer></footer>
         </Col>
       </Row>
     </div>
