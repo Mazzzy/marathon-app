@@ -244,7 +244,6 @@ export default function PersonDetails(props) {
             </div>
 
             <div className="fitness-container">
-
               <div className="image-container" id="fit-image">
                 <div className="stat-block" id="fit-block-1">
                   <p className="stat-figure">
@@ -254,8 +253,6 @@ export default function PersonDetails(props) {
                   <span className="highlight">normal</span>
                 </div>
 
-
-
                 <div className="stat-block" id="fit-block-2">
                   <p className="stat-figure">
                     2.18<br />
@@ -263,8 +260,6 @@ export default function PersonDetails(props) {
                   </p>
                   <span className="highlight">above</span>
                 </div>
-
-
 
                 <div className="stat-block" id="fit-block-3">
                   <p className="stat-figure">
@@ -274,8 +269,6 @@ export default function PersonDetails(props) {
                   <span className="highlight">under</span>
                 </div>
 
-
-
                 <div className="stat-block" id="fit-block-4">
                   <p className="stat-figure">
                     2.18<br />
@@ -284,8 +277,6 @@ export default function PersonDetails(props) {
                   <span className="highlight">under</span>
                 </div>
 
-
-
                 <div className="stat-block" id="fit-block-5">
                   <p className="stat-figure">
                     2.18<br />
@@ -293,14 +284,18 @@ export default function PersonDetails(props) {
                   </p>
                   <span className="highlight">under</span>
                 </div>
-
-
               </div>
             </div>
+
+            <div className="info-box fitness-info-box">
+              <div className="info-text">
+                <h6>Body Fat Mass</h6>
+                <p>The body fat percentage (BFP) of a human or other living being is the total mass of fat divided by total body mass, multiplied by 100; body fat includes essential body fat and storage body fat.</p>
+              </div>
+            </div>
+
             <div className="fitness-container">
               <div className="image-container" id="fat-image">
-
-
                 <div className="stat-block" id="fat-block-1">
                   <p className="stat-figure">
                     2.18<br />
@@ -309,8 +304,6 @@ export default function PersonDetails(props) {
                   <span className="highlight">normal</span>
                 </div>
 
-
-
                 <div className="stat-block" id="fat-block-2">
                   <p className="stat-figure">
                     2.18<br />
@@ -318,8 +311,7 @@ export default function PersonDetails(props) {
                   </p>
                   <span className="highlight">above</span>
                 </div>
-
-
+                
                 <div className="stat-block" id="fat-block-3">
                   <p className="stat-figure">
                     2.18<br />
@@ -327,9 +319,7 @@ export default function PersonDetails(props) {
                   </p>
                   <span className="highlight">under</span>
                 </div>
-
-
-
+                
                 <div className="stat-block" id="fat-block-4">
                   <p className="stat-figure">
                     2.18<br />
@@ -337,9 +327,7 @@ export default function PersonDetails(props) {
                   </p>
                   <span className="highlight">under</span>
                 </div>
-
-
-
+                
                 <div className="stat-block" id="fat-block-5">
                   <p className="stat-figure">
                     2.18<br />
@@ -347,8 +335,6 @@ export default function PersonDetails(props) {
                   </p>
                   <span className="highlight">under</span>
                 </div>
-
-
               </div>
             </div>
             <div id="target-weight" class="fitness-container">

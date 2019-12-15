@@ -1,12 +1,12 @@
 /* header styles */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6{
     margin: 0;
     padding: 0;
 }
 
 .head-container {
     border-bottom: 2px solid #714684;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .head-container .navbar {
@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 .info-box {
     max-width: 100%;
     display: flex;
-    padding: 20px 20px 0 20px;
+    padding: 20px 0 0 0;
 }
 
 .info-box .info-head {
@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
 .item-box {
     max-width: 100%;
     display: flex;
-    padding: 20px;
+    padding: 20px 0;
     flex-wrap: wrap;
 }
 
@@ -89,24 +89,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .item-box .item-hexagon.right-hex { 
-    padding-left: 12px;
+    padding-left: 28px;
 }
 
 .item-box .item-hexagon .img {
     max-width: 90.6px;
     position: absolute;
-    top: -6px;
+    top: -12px;
 }
 
 .item-box .item-hexagon .text {
     position: absolute;
     font-size: 22px;
-    top: 26px;
+    top: 22px;
     left: 24px;
 }
 
 .item-box .item-hexagon.right-hex .text{ 
-    left: 34px;
+    left: 50px;
 }
 
 .item-box .item-text {
@@ -167,7 +167,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 6px;
     max-width: 100%;
     display: flex;
-    margin: 22px 22px;
+    margin: 22px 0;
     padding: 20px;
 }
 
@@ -183,7 +183,7 @@ h1, h2, h3, h4, h5, h6 {
 .info-parameters .arrow-right {
     position: absolute;
     left: -20px;
-    top: -6px;
+    top: -12px;
     width: 0; 
     height: 0; 
     border-top: 40px solid transparent;
@@ -214,7 +214,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* fitness section styles */
 .fitness-info-box {
-    margin-bottom: 40px;
+    margin: 40px 0;
 }
 
 .fitness-info-box .info-text h6{
