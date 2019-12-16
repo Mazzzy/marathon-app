@@ -14,7 +14,8 @@ export default function PersonDetails(props) {
   useEffect(() => {
     let phoneNum = getUrlParameter('phone');
     if(phoneNum){
-      API.get('https://restcountries.eu/rest/v2/all')
+      //API.get('https://restcountries.eu/rest/v2/all')
+      API.get('/personDetails?phone=121')
       .then(res => {
         setPersonDetails(res.data);
         setLoad(true);
@@ -48,6 +49,7 @@ export default function PersonDetails(props) {
   //   return countries.map((country, index) => <div key={index}>{country.name}</div>)
   // }
   function renderContent() {
+    console.log('personDetails',personDetails)
     return (
       <div>
         <Row className="head-container">
