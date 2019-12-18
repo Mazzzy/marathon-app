@@ -90,6 +90,14 @@ h1, h2, h3, h4, h5, h6, ul, ol{
     position: relative;
     flex-grow: 1;
     width: 33%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-box .item-hexagon.left-hex { 
+    padding-right: 130px;
 }
 
 .item-box .item-hexagon.right-hex { 
@@ -98,19 +106,20 @@ h1, h2, h3, h4, h5, h6, ul, ol{
 
 .item-box .item-hexagon .img {
     max-width: 170px;
-    position: absolute;
-    top: -12px;
+    /* position: absolute;
+    top: -12px; */
 }
 
 .item-box .item-hexagon .text {
     position: absolute;
     font-size: 5.6rem;
-    top: 40px;
-    left: 30px;
+    /* top: 40px;
+    left: 30px; */
+    text-align: center;
 }
 
 .item-box .item-hexagon.right-hex .text{ 
-    left: 180px;
+    /* left: 180px; */
 }
 
 .item-box .item-text {

@@ -87,11 +87,10 @@ export default function PersonDetails(props) {
                   </a>
                 </nav>
                 <div className="head-info">
-                  <div>Name: {person["1"]}</div>
-                  <div>ID: {person["2"]}</div>
+                  <div>ID: {person["ID"]}</div>
                 </div>
                 <div className="head-info">
-                  <div>Height: {person["3"]}</div>
+                  <div>Height: {person["Height"]}</div>
                   <div>Date: {formatedDate()}</div>
                 </div>
               </header>
@@ -102,7 +101,7 @@ export default function PersonDetails(props) {
               <div className="main-contents">
                 <div className="info-box">
                   <div className="info-head">
-                    <h6>{person["65"]}</h6>
+                    <h6>{person["InBody Score"]}</h6>
                   </div>
                   <div className="info-text">
                     <h6>InBody Score</h6>
@@ -117,43 +116,41 @@ export default function PersonDetails(props) {
                   </div>
                 </div>
                 <div className="item-box">
-                  <div className="item-hexagon">
+                  <div className="item-hexagon left-hex">
                     <img src={hexagonImg} alt="hexgaon img" className="img" />
-                    <div className="text">{person["18"]}</div>
+                    <div className="text">{person["TBW (Total Body Water)"]}</div>
                   </div>
                   <div className="item-text">
                     <h6>Total Body Water</h6>
-                    { generateTypeElem(person["18"], person["19"], person["20"], true) }
+                    { generateTypeElem(person["TBW (Total Body Water)"], person["Lower Limit (TBW Normal Range)"], person["Upper Limit (TBW Normal Range)"], true) }
                     <p>Total Amount of water in body.</p>
-                    <p>Normal Range : {person["19"]} - {person["20"]}</p>
+                    <p>Normal Range : {person["Lower Limit (TBW Normal Range)"]} - {person["Upper Limit (TBW Normal Range)"]}</p>
                   </div>
                 </div>
 
                 <div className="item-box">
                   <div className="item-text text-right">
                     <h6>Proteins</h6>
-                    {/* <span className="item-top above">Above</span> */}
-                    { generateTypeElem(person["21"], person["22"], person["23"], false) }
+                    { generateTypeElem(person["Protein"], person["Lower Limit (Protein Normal Range)"], person["Upper Limit (Protein Normal Range)"], false) }
                     <p>For Building Blocks.</p>
-                    <p>Normal Range : {person["22"]} - {person["23"]} Kg</p>
+                    <p>Normal Range : {person["Lower Limit (Protein Normal Range)"]} - {person["Upper Limit (Protein Normal Range)"]} Kg</p>
                   </div>
                   <div className="item-hexagon right-hex">
                     <img src={hexagonImg} alt="hexgaon img" className="img" />
-                    <div className="text">{person["21"]}</div>
+                    <div className="text">{person["Protein"]}</div>
                   </div>
                 </div>
 
                 <div className="item-box">
-                  <div className="item-hexagon">
+                  <div className="item-hexagon left-hex">
                     <img src={hexagonImg} alt="hexgaon img" className="img" />
-                    <div className="text">{person["24"]}</div>
+                    <div className="text">{person["Minerals"]}</div>
                   </div>
                   <div className="item-text">
                     <h6>Minerals</h6>
-                    {/* <span className="item-top right under">Under</span> */}
-                    { generateTypeElem(person["24"], person["25"], person["26"], true) }
+                    { generateTypeElem(person["Minerals"], person["Lower Limit (Minerals Normal Range)"], person["Upper Limit (Minerals Normal Range)"], true) }
                     <p>For Strengthening bones</p>
-                    <p>Normal Range : {person["25"]} - {person["26"]}</p>
+                    <p>Normal Range : {person["Lower Limit (Minerals Normal Range)"]} - {person["Upper Limit (Minerals Normal Range)"]}</p>
                   </div>
                 </div>
 
@@ -167,72 +164,67 @@ export default function PersonDetails(props) {
                 <div className="item-box">
                   <div className="item-text text-right">
                     <h6>Body Fat Mass</h6>
-                    {/* <span className="item-top normal">Normal</span> */}
-                    { generateTypeElem(person["27"], person["28"], person["29"], false) }
+                    { generateTypeElem(person["BFM (Body Fat Mass)"], person["Lower Limit (BFM Normal Range)"], person["Upper Limit (BFM Normal Range)"], false) }
                     <p>bla bla bla bla bla bla bla</p>
-                    <p>Normal Range : {person["28"]} - {person["29"]}</p>
+                    <p>Normal Range : {person["Lower Limit (BFM Normal Range)"]} - {person["Upper Limit (BFM Normal Range)"]}</p>
                   </div>
                   <div className="item-hexagon right-hex">
                     <img src={hexagonImg} alt="hexgaon img" className="img" />
-                    <div className="text">{person["27"]}</div>
+                    <div className="text">{person["BFM (Body Fat Mass)"]}</div>
                   </div>
                 </div>
 
                 <div className="item-box">
-                  <div className="item-hexagon">
+                  <div className="item-hexagon left-hex">
                     <img src={hexagonImg} alt="hexgaon img" className="img" />
-                    <div className="text">{person["15"]}</div>
+                    <div className="text">{person["Weight"]}</div>
                   </div>
                   <div className="item-text">
                     <h6>Weight</h6>
-                    {/* <span className="item-top right normal">Normal</span> */}
-                    { generateTypeElem(person["15"], person["16"], person["17"], true) }
+                    { generateTypeElem(person["Weight"], person["Lower Limit (Weight Normal Range)"], person["Upper Limit (Weight Normal Range)"], true) }
                     <p>Sum of all above.</p>
-                    <p>Normal Range : {person["16"]} - {person["17"]}</p>
+                    <p>Normal Range : {person["Lower Limit (Weight Normal Range)"]} - {person["Upper Limit (Weight Normal Range)"]}</p>
                   </div>
                 </div>
 
                 <div className="item-box">
                   <div className="item-text text-right">
                     <h6>Skeleton Muscle Mass</h6>
-                    {/* <span className="item-top under">Under</span> */}
-                    { generateTypeElem(person["36"], person["37"], person["38"], false) }
+                    { generateTypeElem(person["SMM (Skeletal Muscle Mass)"], person["Lower Limit (SMM Normal Range)"], person["Upper Limit (SMM Normal Range)"], false) }
                     <p>bla bla bla bla bla bla bla</p>
-                    <p>Normal Range :{person["37"]} - {person["38"]}</p>
+                    <p>Normal Range :{person["Lower Limit (SMM Normal Range)"]} - {person["Upper Limit (SMM Normal Range)"]}</p>
                   </div>
                   <div className="item-hexagon right-hex">
                     <img src={hexagonImg} alt="hexgaon img" className="img" />
-                    <div className="text">{person["36"]}</div>
+                    <div className="text">{person["SMM (Skeletal Muscle Mass)"]}</div>
                   </div>
                 </div>
 
                 <div className="item-box">
-                  <div className="item-hexagon">
+                  <div className="item-hexagon left-hex">
                     <img src={hexagonImg} alt="hexgaon img" className="img" />
-                    <div className="text">{person["33"]}</div>
+                    <div className="text">{person["FFM (Fat Free Mass)"]}</div>
                   </div>
                   <div className="item-text">
                     <h6>Fat Free</h6>
-                    {/* <span className="item-top right under">Under</span> */}
-                    { generateTypeElem(person["33"], person["34"], person["35"], true) }
+                    { generateTypeElem(person["FFM (Fat Free Mass)"], person["Lower Limit (FFM Normal Range)"], person["Upper Limit (FFM Normal Range)"], true) }
                     <p>bla bla bla bla</p>
-                    <p>Normal Range : {person["34"] } - {person["35"]}</p>
+                    <p>Normal Range : {person["Lower Limit (FFM Normal Range)"] } - {person["Upper Limit (FFM Normal Range)"]}</p>
                   </div>
                 </div>
 
-                <div className="item-box">
+                {/* <div className="item-box">
                   <div className="item-text text-right">
                     <h6>Soft Lean Mass</h6>
-                    {/* <span className="item-top under">Under</span> */}
-                    { generateTypeElem(person["30"], person["31"], person["32"], false) }
+                    { generateTypeElem(person["SLM (Soft Lean Mass)"], person["Lower Limit (SLM Normal Range)"], person["Upper Limit (SLM Normal Range)"], false) }
                     <p>bla bla bla bla bla bla bla</p>
-                    <p>Normal Range : {person["31"]} - {person["32"]}</p>
+                    <p>Normal Range : {person["Lower Limit (SLM Normal Range)"]} - {person["Upper Limit (SLM Normal Range)"]}</p>
                   </div>
                   <div className="item-hexagon right-hex">
                     <img src={hexagonImg} alt="hexgaon img" className="img" />
-                    <div className="text">{person["30"]}</div>
+                    <div className="text">{person["SLM (Soft Lean Mass)"]}</div>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="info-box">
                   <div className="info-text">
@@ -243,25 +235,25 @@ export default function PersonDetails(props) {
 
                 <div className="info-box info-parameters">
                   <div className="info-head">
-                    <div className={`arrow-right ${getTypeClass(person["39"], person["40"], person["41"])} `}></div>
-                    <h6>{person["39"]}</h6>
+                    <div className={`arrow-right ${getTypeClass(person["BMI (Body Mass Index)"], person["Lower Limit (BMI Normal Range)"], person["Upper Limit (BMI Normal Range)"])} `}></div>
+                    <h6>{person["BMI (Body Mass Index)"]}</h6>
                   </div>
                   <div className="info-text">
                     <h6>Body Mass Index</h6>
                     <p>bla bla bla bla bla bla bla</p>
-                    <p>Normal Range : {person["40"]} - {person["41"]}</p>
+                    <p>Normal Range : {person["Lower Limit (BMI Normal Range)"]} - {person["Upper Limit (BMI Normal Range)"]}</p>
                   </div>
                 </div>
 
                 <div className="info-box info-parameters">
                   <div className="info-head">
-                    <div className={`arrow-right ${getTypeClass(person["42"], person["43"], person["44"])}`}></div>
-                    <h6>{person["42"]}</h6>
+                    <div className={`arrow-right ${getTypeClass(person["PBF (Percent Body Fat)"], person["Lower Limit (PBF Normal Range)"], person["Upper Limit (PBF Normal Range)"])}`}></div>
+                    <h6>{person["PBF (Percent Body Fat)"]}</h6>
                   </div>
                   <div className="info-text">
                     <h6>Percentage Body Fat</h6>
                     <p>bla bla bla bla bla bla bla</p>
-                    <p>Normal Range : {person["43"]} - {person["44"]}</p>
+                    <p>Normal Range : {person["Lower Limit (PBF Normal Range)"]} - {person["Upper Limit (PBF Normal Range)"]}</p>
                   </div>
                 </div>
 
@@ -271,7 +263,7 @@ export default function PersonDetails(props) {
                   </div>
                 </div>
 
-                <div className="info-box info-parameters">
+                {/* <div className="info-box info-parameters">
                   <div className="info-head">
                     <div className="arrow-right above"></div>
                     <h6>12</h6>
@@ -281,9 +273,9 @@ export default function PersonDetails(props) {
                     <p>bla bla bla bla bla bla bla</p>
                     <p>Normal Range : 1-9</p>
                   </div>
-                </div>
+                </div> */}
 
-                <div className="info-box info-parameters">
+                {/* <div className="info-box info-parameters">
                   <div className="info-head">
                     <div className="arrow-right normal"></div>
                     <h6>2.2</h6>
@@ -293,33 +285,33 @@ export default function PersonDetails(props) {
                     <p>bla bla bla bla bla bla bla</p>
                     <p>Normal Range : -5.1-7.3</p>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="info-box info-parameters">
                   <div className="info-head">
-                    <div className={`arrow-right ${getTypeClass(person["71"], person["72"], person["73"])}`}></div>
-                    <h6>{person["71"]}</h6>
+                    <div className={`arrow-right ${getTypeClass(person["WHR (Waist-Hip Ratio)"], person["Lower Limit (WHR Normal Range)"], person["Upper Limit (WHR Normal Range)"])}`}></div>
+                    <h6>{person["WHR (Waist-Hip Ratio)"]}</h6>
                   </div>
                   <div className="info-text">
                     <h6>Waist-Hip Ratio</h6>
                     <p>bla bla bla bla bla bla bla</p>
-                    <p>Normal Range : {person["72"]} - {person["73"]}</p>
+                    <p>Normal Range : {person["Lower Limit (WHR Normal Range)"]} - {person["Upper Limit (WHR Normal Range)"]}</p>
                   </div>
                 </div>
 
                 <div className="info-box info-parameters">
                   <div className="info-head">
-                    <div className={`arrow-right ${getTypeClass(person["75"], person["76"], person["77"])}`}></div>
-                    <h6>{person["75"]}</h6>
+                    <div className={`arrow-right ${getTypeClass(person["Obesity Degree"], person["Lower Limit (Obesity Degree Normal Range)"], person["Upper Limit (Obesity Degree Normal Range)"])}`}></div>
+                    <h6>{person["Obesity Degree"]}</h6>
                   </div>
                   <div className="info-text">
                     <h6>Obesity Degree</h6>
                     <p>bla bla bla bla bla bla bla</p>
-                    <p>Normal Range : {person["76"]} - {person["77"]}</p>
+                    <p>Normal Range : {person["Lower Limit (Obesity Degree Normal Range)"]} - {person["Upper Limit (Obesity Degree Normal Range)"]}</p>
                   </div>
                 </div>
 
-                <div className="info-box info-parameters">
+                {/* <div className="info-box info-parameters">
                   <div className="info-head">
                     <div className={`arrow-right ${getTypeClass(person["78"], person["79"], person["80"])}`}></div>
                     <h6>{person["78"]}</h6>
@@ -329,7 +321,7 @@ export default function PersonDetails(props) {
                     <p>bla bla bla bla bla bla bla</p>
                     <p>Normal Range : {person["79"]} - {person["80"]}</p>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="info-box fitness-info-box">
                   <div className="info-text">
@@ -342,41 +334,41 @@ export default function PersonDetails(props) {
                   <div className="image-container fit-image">
                     <div className="stat-block" id="fit-block-1">
                       <ul className="stat-list">
-                        <li>{person["49"]}</li>
-                        <li>{person["50"]}%</li>
-                        <li className={`highlight ${fitnessTypeVal(person["50"])}`}>{fitnessTypeVal(person["50"])}</li>
+                        <li>{person["FFM of Trunk"]}</li>
+                        <li>{person["FFM% of Trunk"]}%</li>
+                        <li className={`highlight ${fitnessTypeVal(person["FFM% of Trunk"])}`}>{fitnessTypeVal(person["FFM% of Trunk"])}</li>
                       </ul>
                     </div>
 
                     <div className="stat-block" id="fit-block-2">
                       <ul className="stat-list">
-                        <li>{person["45"]}</li>
-                        <li>{person["46"]}%</li>
-                        <li className={`highlight ${fitnessTypeVal(person["46"])}`}>{fitnessTypeVal(person["46"])}</li>
+                        <li>{person["FFM of Right Arm"]}</li>
+                        <li>{person["FFM% of Right Arm"]}%</li>
+                        <li className={`highlight ${fitnessTypeVal(person["FFM% of Right Arm"])}`}>{fitnessTypeVal(person["FFM% of Right Arm"])}</li>
                       </ul>
                     </div>
 
                     <div className="stat-block" id="fit-block-3">
                       <ul className="stat-list">
-                        <li>{person["51"]}</li>
-                        <li>{person["52"]}%</li>
-                        <li className={`highlight ${fitnessTypeVal(person["52"])}`}>{fitnessTypeVal(person["52"])}</li>
+                        <li>{person["FFM of Right Leg"]}</li>
+                        <li>{person["FFM% of Right Leg"]}%</li>
+                        <li className={`highlight ${fitnessTypeVal(person["FFM% of Right Leg"])}`}>{fitnessTypeVal(person["FFM% of Right Leg"])}</li>
                       </ul>
                     </div>
 
                     <div className="stat-block" id="fit-block-4">
                       <ul className="stat-list">
-                      <li>{person["47"]}</li>
-                      <li>{person["48"]}%</li>
-                      <li className={`highlight ${fitnessTypeVal(person["48"])}`}>{fitnessTypeVal(person["48"])}</li>
+                      <li>{person["FFM of Left Arm"]}</li>
+                      <li>{person["FFM% of Left Arm"]}%</li>
+                      <li className={`highlight ${fitnessTypeVal(person["FFM% of Left Arm"])}`}>{fitnessTypeVal(person["FFM% of Left Arm"])}</li>
                       </ul>
                     </div>
 
                     <div className="stat-block" id="fit-block-5">
                       <ul className="stat-list">
-                        <li>{person["53"]}</li>
-                        <li>{person["54"]}%</li>
-                        <li className={`highlight ${fitnessTypeVal(person["54"])}`}>{fitnessTypeVal(person["54"])}</li>
+                        <li>{person["FFM of Left Leg"]}</li>
+                        <li>{person["FFM% of Left Leg"]}%</li>
+                        <li className={`highlight ${fitnessTypeVal(person["FFM% of Left Leg"])}`}>{fitnessTypeVal(person["FFM% of Left Leg"])}</li>
                       </ul>
                     </div>
                   </div>
@@ -393,41 +385,41 @@ export default function PersonDetails(props) {
                   <div className="image-container fat-image">
                     <div className="stat-block" id="fat-block-1">
                       <ul className="stat-list">
-                        <li>{person["59"]}</li>
-                        <li>{person["60"]}%</li>
-                        <li className={`highlight ${fitnessTypeVal(person["60"])}`}>{fitnessTypeVal(person["60"])}</li>
+                        <li>{person["BFM of Trunk"]}</li>
+                        <li>{person["BFM% of Trunk"]}%</li>
+                        <li className={`highlight ${fitnessTypeVal(person["BFM% of Trunk"])}`}>{fitnessTypeVal(person["BFM% of Trunk"])}</li>
                       </ul>
                     </div>
 
                     <div className="stat-block" id="fat-block-2">
                       <ul className="stat-list">
-                        <li>{person["55"]}</li>
-                        <li>{person["56"]}%</li>
-                        <li className={`highlight ${fitnessTypeVal(person["56"])}`}>{fitnessTypeVal(person["56"])}</li>
+                        <li>{person["BFM of Right Arm"]}</li>
+                        <li>{person["BFM% of Right Arm"]}%</li>
+                        <li className={`highlight ${fitnessTypeVal(person["BFM% of Right Arm"])}`}>{fitnessTypeVal(person["BFM% of Right Arm"])}</li>
                       </ul>
                     </div>
 
                     <div className="stat-block" id="fat-block-3">
                       <ul className="stat-list">
-                        <li>{person["61"]}</li>
-                        <li>{person["62"]}%</li>
-                        <li className={`highlight ${fitnessTypeVal(person["62"])}`}>{fitnessTypeVal(person["62"])}</li>
+                        <li>{person["BFM of Right Leg"]}</li>
+                        <li>{person["BFM% of Right Leg"]}%</li>
+                        <li className={`highlight ${fitnessTypeVal(person["BFM% of Right Leg"])}`}>{fitnessTypeVal(person["BFM% of Right Leg"])}</li>
                       </ul>
                     </div>
 
                     <div className="stat-block" id="fat-block-4">
                       <ul className="stat-list">
-                        <li>{person["57"]}</li>
-                        <li>{person["58"]}%</li>
-                        <li className={`highlight ${fitnessTypeVal(person["58"])}`}>{fitnessTypeVal(person["58"])}</li>
+                        <li>{person["BFM of Left Arm"]}</li>
+                        <li>{person["BFM% of Left Arm"]}%</li>
+                        <li className={`highlight ${fitnessTypeVal(person["BFM% of Left Arm"])}`}>{fitnessTypeVal(person["BFM% of Left Arm"])}</li>
                       </ul>
                     </div>
 
                     <div className="stat-block" id="fat-block-5">
                       <ul className="stat-list">
-                        <li>{person["63"]}</li>
-                        <li>{person["64"]}%</li>
-                        <li className={`highlight ${fitnessTypeVal(person["64"])}`}>{fitnessTypeVal(person["64"])}</li>
+                        <li>{person["BFM of Left Leg"]}</li>
+                        <li>{person["BFM% of Left Leg"]}%</li>
+                        <li className={`highlight ${fitnessTypeVal(person["BFM% of Left Leg"])}`}>{fitnessTypeVal(person["BFM% of Left Leg"])}</li>
                       </ul>
                     </div>
                   </div>
@@ -437,7 +429,7 @@ export default function PersonDetails(props) {
                   <div className="circle">
                     <div className="circle-content">
                       <h4 className="circle-title">target weight</h4>
-                      <h6 className="circle-stat">{person["66"]}</h6>
+                      <h6 className="circle-stat">{person["Target Weight"]}</h6>
                       <h6 class="circle-measurement">Kg</h6>
                     </div>
                   </div>
@@ -447,7 +439,7 @@ export default function PersonDetails(props) {
                   <div className="circle">
                     <div className="circle-content">
                       <h4 className="circle-title">Basal Metabolic Rate</h4>
-                      <h6 className="circle-stat">{person["70"]}</h6>
+                      <h6 className="circle-stat">{person["BMR (Basal Metabolic Rate)"]}</h6>
                     </div>
                   </div>
                 </div>
