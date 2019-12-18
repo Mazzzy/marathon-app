@@ -77,7 +77,7 @@ export default function PersonDetails(props) {
     
     return (
       personDetails.map((person, index) => (
-        <div key={index}>
+        <div className="details-container" key={index}>
           <Row className="head-container">
             <Col md={12}>
               <header>
@@ -438,6 +438,7 @@ export default function PersonDetails(props) {
                     <div className="circle-content">
                       <h4 className="circle-title">target weight</h4>
                       <h6 className="circle-stat">{person["66"]}</h6>
+                      <h6 class="circle-measurement">Kg</h6>
                     </div>
                   </div>
                 </div>
