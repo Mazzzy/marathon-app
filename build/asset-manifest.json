@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.ee548c3e.chunk.css",
-    "main.js": "/static/js/main.f50948d4.chunk.js",
-    "main.js.map": "/static/js/main.f50948d4.chunk.js.map",
+    "main.css": "/static/css/main.152962c9.chunk.css",
+    "main.js": "/static/js/main.f509885a.chunk.js",
+    "main.js.map": "/static/js/main.f509885a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.bf6d26c0.js",
     "runtime-main.js.map": "/static/js/runtime-main.bf6d26c0.js.map",
-    "static/js/2.882b920c.chunk.js": "/static/js/2.882b920c.chunk.js",
-    "static/js/2.882b920c.chunk.js.map": "/static/js/2.882b920c.chunk.js.map",
+    "static/js/2.1a12c263.chunk.js": "/static/js/2.1a12c263.chunk.js",
+    "static/js/2.1a12c263.chunk.js.map": "/static/js/2.1a12c263.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.c27a74d331b51a144d59372e000b4b4c.js": "/precache-manifest.c27a74d331b51a144d59372e000b4b4c.js",
+    "precache-manifest.a9becf00f2a1ea1b74745501d1737fac.js": "/precache-manifest.a9becf00f2a1ea1b74745501d1737fac.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.ee548c3e.chunk.css.map": "/static/css/main.ee548c3e.chunk.css.map",
+    "static/css/main.152962c9.chunk.css.map": "/static/css/main.152962c9.chunk.css.map",
     "static/media/index.css": "/static/media/MavenPro-Regular.ebc7385f.ttf",
     "static/media/PersonDetails.css": "/static/media/muscular.cba4b596.png",
     "static/media/healthrx-logo.png": "/static/media/healthrx-logo.a7e075d8.png",
-    "static/media/hexagon.png": "/static/media/hexagon.116666cf.png"
+    "static/media/hexagon.png": "/static/media/hexagon.116666cf.png",
+    "static/media/rhc-logo.jpg": "/static/media/rhc-logo.83aac883.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.bf6d26c0.js",
-    "static/js/2.882b920c.chunk.js",
-    "static/css/main.ee548c3e.chunk.css",
-    "static/js/main.f50948d4.chunk.js"
+    "static/js/2.1a12c263.chunk.js",
+    "static/css/main.152962c9.chunk.css",
+    "static/js/main.f509885a.chunk.js"
   ]
 }

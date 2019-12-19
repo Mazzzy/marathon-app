@@ -22,6 +22,10 @@ h1, h2, h3, h4, h5, h6, ul, ol{
     height: 0;
 }
 
+.navbar-brand.left-logo {
+    padding-top: 18px;
+}
+
 .head-container .navbar-logo {
     max-width: 320px;
 }
@@ -56,6 +60,7 @@ h1, h2, h3, h4, h5, h6, ul, ol{
 
 .info-box .info-head h6 {
     font-size: 12rem;
+    padding-top: 28px;
 }
 
 .info-box .info-text {
@@ -201,7 +206,8 @@ h1, h2, h3, h4, h5, h6, ul, ol{
 .info-parameters .arrow-right {
     position: absolute;
     left: -41px;
-    top: -20px;
+    /* top: -20px; */
+    top: 0;
     width: 0; 
     height: 0; 
     border-top: 80px solid transparent;
@@ -318,8 +324,8 @@ h1, h2, h3, h4, h5, h6, ul, ol{
     margin: 140px 0;
 }
 .circle-container .circle {
-    width: 620px;
-    height: 620px;
+    width: 520px;
+    height: 520px;
     border: 14px solid #60318C;
     border-radius: 100%;
     display: flex;
@@ -352,3 +358,8 @@ h1, h2, h3, h4, h5, h6, ul, ol{
 }
 
 /* footer styles */
+.footer-info {
+    font-family: 'MavenProMedium', Fallback, sans-serif;
+    font-size: 3rem;
+    padding: 10px 30px 40px 30px;
+}
