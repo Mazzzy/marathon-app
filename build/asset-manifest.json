@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.152962c9.chunk.css",
-    "main.js": "/static/js/main.f509885a.chunk.js",
-    "main.js.map": "/static/js/main.f509885a.chunk.js.map",
+    "main.css": "/static/css/main.e5b8f7ab.chunk.css",
+    "main.js": "/static/js/main.518e7b75.chunk.js",
+    "main.js.map": "/static/js/main.518e7b75.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.bf6d26c0.js",
     "runtime-main.js.map": "/static/js/runtime-main.bf6d26c0.js.map",
-    "static/js/2.1a12c263.chunk.js": "/static/js/2.1a12c263.chunk.js",
-    "static/js/2.1a12c263.chunk.js.map": "/static/js/2.1a12c263.chunk.js.map",
+    "static/js/2.02e07c7e.chunk.js": "/static/js/2.02e07c7e.chunk.js",
+    "static/js/2.02e07c7e.chunk.js.map": "/static/js/2.02e07c7e.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.a9becf00f2a1ea1b74745501d1737fac.js": "/precache-manifest.a9becf00f2a1ea1b74745501d1737fac.js",
+    "precache-manifest.46c9073df2a809bb884b466e75f87a92.js": "/precache-manifest.46c9073df2a809bb884b466e75f87a92.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.152962c9.chunk.css.map": "/static/css/main.152962c9.chunk.css.map",
+    "static/css/main.e5b8f7ab.chunk.css.map": "/static/css/main.e5b8f7ab.chunk.css.map",
     "static/media/index.css": "/static/media/MavenPro-Regular.ebc7385f.ttf",
     "static/media/PersonDetails.css": "/static/media/muscular.cba4b596.png",
     "static/media/healthrx-logo.png": "/static/media/healthrx-logo.a7e075d8.png",
@@ -19,8 +19,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.bf6d26c0.js",
-    "static/js/2.1a12c263.chunk.js",
-    "static/css/main.152962c9.chunk.css",
-    "static/js/main.f509885a.chunk.js"
+    "static/js/2.02e07c7e.chunk.js",
+    "static/css/main.e5b8f7ab.chunk.css",
+    "static/js/main.518e7b75.chunk.js"
   ]
 }
